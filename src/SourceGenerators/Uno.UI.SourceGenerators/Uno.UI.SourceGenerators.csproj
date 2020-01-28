@@ -4,7 +4,7 @@
     <AssemblyName>Uno.UI.SourceGenerators</AssemblyName>
 		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
 	</PropertyGroup>
-	
+
 	<ItemGroup>
 		<Reference Include="System" />
 		<Reference Include="System.Core" />
@@ -54,7 +54,7 @@
 		<PackageReference Include="Uno.Core" />
 		<PackageReference Include="Uno.SourceGeneration" />
 	</ItemGroup>
-	
+
 	<ItemGroup>
 		<Compile Include="..\..\Uno.Foundation\Point.cs">
 			<Link>XamlGenerator\XamlPathParser\Point.cs</Link>
@@ -87,11 +87,11 @@
 			<Link>Helpers\GridUnitType.cs</Link>
 		</Compile>
 	</ItemGroup>
-	
+
 	<ItemGroup>
 		<None Include="Content\Uno.UI.SourceGenerators.props" />
 	</ItemGroup>
-	
+
 	<ItemGroup>
 		<ProjectReference Include="..\System.Xaml\Uno.Xaml.csproj">
 			<Project>{1627740a-19d2-4d21-a0b2-66667038daf6}</Project>
@@ -99,7 +99,7 @@
 			<Aliases>__uno</Aliases>
 		</ProjectReference>
 	</ItemGroup>
-	
+
 	<Target Name="_UnoToolkitOverrideNuget" AfterTargets="AfterBuild" DependsOnTargets="BuiltProjectOutputGroup" Condition="'$(UnoNugetOverrideVersion)'!=''">
 		<PropertyGroup>
 			<_TargetNugetFolder>$(USERPROFILE)\.nuget\packages\Uno.UI\$(UnoNugetOverrideVersion)\tools</_TargetNugetFolder>
