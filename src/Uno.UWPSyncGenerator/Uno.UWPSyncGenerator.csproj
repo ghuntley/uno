@@ -7,7 +7,7 @@
 		<AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
 		<GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
 	</PropertyGroup>
-	
+
 	<ItemGroup>
 		<PackageReference Include="ManagedEsent">
 			<Version>1.9.4</Version>
@@ -55,10 +55,10 @@
 		</PackageReference>
 		<PackageReference Include="Uno.Core" Version="1.28.0-dev.86" />
 	</ItemGroup>
-	
+
 	<ItemGroup>
 	  <Folder Include="Properties\" />
 	</ItemGroup>
-	
+
 	<Import Project="..\Common.targets" />
 </Project>
