@@ -7,7 +7,7 @@
 		<LangVersion>7.2</LangVersion>
 		<OutputType>Exe</OutputType>
 	</PropertyGroup>
-	
+
 	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
 		<DebugSymbols>true</DebugSymbols>
 		<DebugType>full</DebugType>
@@ -65,13 +65,13 @@
   <PropertyGroup>
     <UnoUIGeneratorsBinPath>..\SourceGenerators\Uno.UI.SourceGenerators\bin\$(Configuration)</UnoUIGeneratorsBinPath>
   </PropertyGroup>
-  
+
   <Import Project="..\SourceGenerators\Uno.UI.SourceGenerators\Content\Uno.UI.SourceGenerators.props" />
 
   <Target Name="BeforeBuildCleanup" BeforeTargets="XamlMarkupCompilePass1;_UnoSourceGenerator" />
-  
+
   <Import Project="..\Common.targets" />
-    
+
   <ItemGroup>
     <ProjectReference Include="..\SourceGenerators\System.Xaml\Uno.Xaml.csproj" />
     <ProjectReference Include="..\Uno.UI.Tests\Uno.UI.Tests.csproj" />
